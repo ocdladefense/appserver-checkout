@@ -5,7 +5,6 @@ var isTestMode = true;
 
 fetchListOfCards();
 function fetchListOfCards(){
-  console.log("HELLO");
   fetch(url).then((response) => {});
 }
 

@@ -26,9 +26,3 @@ function getCards(paymentProfiles)
   
   
 }
-
-if(module && module.exports) //node.js
-{
-module.exports={renderCards:renderCards, 
-                getCards: getCards};
-}

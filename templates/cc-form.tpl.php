@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Using modal cc form</title>
-    <link href="../css/ux.css" type="text/css" rel="stylesheet" />
-    <script src="../js/dataScripts.js"></script>
+    <!-- <link href="../css/ux.css" type="text/css" rel="stylesheet" />
+    <script src="../js/dataScripts.js"></script> -->
 	
 		</style>
 	</head>
@@ -86,7 +86,7 @@
 
                     <div>
                       <label for="SecurityCode">CVV</label> 
-                      <input type ="text" class="form-control" name="cardCode" id="cardCode" placeholder="CVV" style="width: 3" size="3" maxlength="3" required>
+                      <input type ="text" class="form-control" name="cardCode" id="cardCode" placeholder="CVV" style="width: 45" size="3" maxlength="3" required>
                       <div class="invalid-feedback">
                       Please provide a valid credit card security code.
                       </div>
