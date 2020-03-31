@@ -1,5 +1,4 @@
-function validate(data)
-{
+function validate(data){
   var validator = {
     CardNumber: function(CardNumber){
       if(CardNumber.length <16){
@@ -31,7 +30,6 @@ function ValidateData(data){
 //Bootstrap Validation
 function doBootstrapValidation() {
     'use strict';
-   // window.addEventListener('load', function() {
       // Fetch all the forms we want to apply custom Bootstrap validation styles to
       var forms = document.getElementsByClassName('needs-validation');
       // Loop over them and prevent submission
@@ -44,5 +42,4 @@ function doBootstrapValidation() {
           form.classList.add('was-validated');
         }, false);
       });
-    //}, false);
   }

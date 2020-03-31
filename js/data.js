@@ -43,12 +43,3 @@ function  testSuccessfulResponse(){
   var orderResponse = {charge: "succes", ccNumber: "1111111111", orderNumber: "123445677655", amount: "47.50"};
   return Promise.resolve(orderResponse);
 }
-
-
-//fetchListOfCards();
-//   if(module && module.exports){
-//     module.exports={fetchListOfCards:fetchListOfCards, 
-//                   getFormData:getFormData, 
-//                   postFormData:postFormData,
-//                   postCardFromList:postCardFromList};
-// }

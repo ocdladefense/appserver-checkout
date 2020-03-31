@@ -1,6 +1,5 @@
 var modalPrototype = {
-    modalSetup:function()
-    {    
+    modalSetup:function(){    
       this.modalContainer = document.createElement("div");
       this.modalContainer.setAttribute("class", "modal fade");
       this.modalContainer.setAttribute("id", "myModal");
@@ -10,50 +9,40 @@ var modalPrototype = {
       this.modalContainer.setAttribute("aria-hidden", "false");
     },
     
-    attachModal:function()
-    {   
+    attachModal:function(){   
       var body = document.body;
       body.appendChild(this.modalContainer);
     },
     
-    showModal:function()
-    {
+    showModal:function(){
       $('#myModal').modal({ show: false});
     
       $('#myModal').modal('show');     
     },
 
-    hideModal:function()
-    {
+    hideModal:function(){
         $('#myModal').modal('hide');
     },
 
-    loading:function()
-    {
+    loading:function(){
       $('body').addClass('loading');
 
     },
 
-    stopLoading:function()
-    {
+    stopLoading:function(){
       $('body').removeClass('loading');
     },
     
-    content:function (html)
-    {    
+    content:function (html){    
       this.modalContainer.innerHTML=html;
     },
     
-    changeContent:function(html)
-    {
+    changeContent:function(html){
         var modal_body= document.getElementsByClassName("modal-body")[0];
         modal_body.innerHTML = html;
     },
 
-    
-
-    fetchHtml:function(url)
-    {
+    fetchHtml:function(url){
       return fetch(url)
       .then(function(response){
         return response.text();
@@ -61,8 +50,7 @@ var modalPrototype = {
     }
 };
 
-function modal()
-{
+function modal(){
     this.modalContainer= null;
     this.modalSetup();
 }
